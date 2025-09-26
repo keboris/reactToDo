@@ -14,6 +14,7 @@ const initialTodo = {
 };
 
 function reducer(state, action) {
+  console.log("State list : ", state.lists);
   switch (action.type) {
     case "NEW_TODO": {
       const local = localStorage.getItem("todos")
